@@ -1,0 +1,30 @@
+genre, Avg_sentiment
+Action,0.289142
+Adventure,0.389250
+Animation,0.485092
+Biography,0.593422
+Comedy,0.308718
+Crime,0.355721
+Documentary,0.677953
+Drama,0.477346
+Family,0.394678
+Fantasy,0.341213
+History,0.575402
+Horror,0.264074
+Music,0.449005
+Musical,0.517919
+Mystery,0.326629
+Romance,0.377303
+Sci-Fi,0.318984
+Sport,0.401349
+Thriller,0.321425
+War,0.555626
+Western,0.457680
+
+
+Correlation between Avg_sentiment and imdb_score: 0.695
+
+Correlation between Avg_sentiment and gross: 0.129
+
+Correlation between Avg_sentiment and budget: 0.017
+

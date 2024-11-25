@@ -1,0 +1,22 @@
+pandas
+numpy
+scikit-learn
+
+transformers
+torch
+evaluate
+accelerate (pip install accelerate -U)
+
+bs4 (beautiful soup)
+
+matplotlib
+seaborn
+
+json
+joblib
+imdb
+requests
+re (regular expressions)
+tk
+pillow
+tmdbv3api

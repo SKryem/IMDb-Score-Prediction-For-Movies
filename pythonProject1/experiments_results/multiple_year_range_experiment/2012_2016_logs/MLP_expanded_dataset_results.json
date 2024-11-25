@@ -1,0 +1,8 @@
+{
+    "Model": "MLP",
+    "Dataset": "expanded_dataset",
+    "Mean Squared Error (MSE)": 0.279,
+    "Mean Absolute Error (MAE)": 0.388,
+    "R-squared (R\u00b2)": 0.678,
+    "Root Mean Squared Error (RMSE)": 0.528
+}

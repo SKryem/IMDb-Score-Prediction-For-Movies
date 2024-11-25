@@ -1,0 +1,42 @@
+System Overview
+
+The project is a machine learning pipeline designed to scrape, preprocess, analyze, and predict IMDb scores of movies based on a variety of features. It uses a combination of data scraping, feature engineering, and machine learning experiments to evaluate and predict IMDb scores based on different criteria.
+
+Key Components
+
+    Data Scraping (scrap_data.py):
+        Purpose: Gathers data, mainly critic reviews, from IMDb based on a movie title. This includes original data points like ratings, reviews, and basic movie details.
+        Input: metadata.csv file, which is used to get the movie names.
+        Output: imdb_reviews.csv, which contains the critic reviews for each movie.
+
+    Fine-Tuning:
+
+    Purpose: Customizes a BERT model to improve sentiment analysis on movie reviews specifically. This step ensures that the model is optimized for the domain of movie-related text data.
+    Input: reviewDatasetClean.csv -> filtered_fine_tuning_reviews.csv .
+    Output: A fine-tuned BERT model, saved for future use in feature derivation.
+
+    Feature Derivation (derive_features.py):
+        Purpose: Extracts additional features from the critic reviews. This involves natural language processing tasks, such as fine-tuning a BERT model for sentiment analysis of reviews.
+        Input: imdb_reviews.csv, Fine tuned BERT model.
+        Output:  New_Features.csv, avg_sentiment_feature.csv. Which contain the derived features for each movie.
+	
+    Data Cleaning and Merging (create_clean_dataset.py):
+        Purpose: Cleans the datasets, handles missing values, and creates a consolidated dataset.
+        Input: metadata.csv, New_Features.csv, avg_sentiment_feature.csv. 
+        Output: filtered_movie_metadata.csv ,filtered_expanded_movie_metadata.csv.
+
+    Experiments (experiments.py):
+        Purpose: Contains functions to perform various machine learning experiments, such as predicting IMDb scores based on genres, release years, and derived sentiment features.
+        Input: Clean dataset.
+        Output: Logs and performance metrics (e.g., MSE) for each experiment, saved to a specified directory (experiment_results/).
+
+    Plot Generation:
+
+    Purpose: Creates visualizations based on experiment results to provide insights into model performance across different configurations and feature sets.
+    Input: Experiments results.
+    Output: Plots (e.g., MSE across different year ranges, feature impact visualizations) saved as image files in designated directories (./plots/).
+
+    Interactive Prediction Program with UI:
+        Purpose: An interface that allows users to input a movie name and get a predicted IMDb score. It scrapes data, derives features, and then uses trained models to generate predictions.
+        Input: Movie title from the user.
+        Output: Predicted and ground truth IMDb score, along with suggestions to similar movies.

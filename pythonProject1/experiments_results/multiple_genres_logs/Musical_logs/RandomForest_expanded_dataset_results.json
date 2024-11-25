@@ -1,0 +1,8 @@
+{
+    "Model": "RandomForest",
+    "Dataset": "expanded_dataset",
+    "Mean Squared Error (MSE)": 1.185,
+    "Mean Absolute Error (MAE)": 0.696,
+    "R-squared (R\u00b2)": 0.309,
+    "Root Mean Squared Error (RMSE)": 1.089
+}

@@ -1,0 +1,8 @@
+{
+    "Model": "SVM",
+    "Dataset": "expanded_dataset",
+    "Mean Squared Error (MSE)": 0.772,
+    "Mean Absolute Error (MAE)": 0.614,
+    "R-squared (R\u00b2)": 0.55,
+    "Root Mean Squared Error (RMSE)": 0.879
+}

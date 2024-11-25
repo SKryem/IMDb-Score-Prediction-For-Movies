@@ -1,0 +1,6 @@
+Run the main.py file to get the results demonstrated in the report. Make sure that these files exist: 
+1- "./data/movie_metadata.csv" file (taken from: https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset) 
+2- "./data/reviewDatasetClean.csv"
+(taken from https://www.kaggle.com/datasets/garcibo/metacritic-movie-15k-review-582k-dataset)
+
+Other directories (checkpoints/, experiments_results/ , fine-tuning_results/, hyper_parameters_log/, plots/, saved_trained_models/) and files will be created on the process. Using the already existing files (that we uploaded) will save a lot of time. 
